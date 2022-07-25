@@ -1,0 +1,94 @@
+<html>
+
+<HEAD>
+    <title>
+        dasmeetttttttttt
+    </title>
+    <style type=text/css>
+        body {
+            background-color: purple;
+        }
+
+        #D1 {
+            text-align: center;
+            background-color: plum;
+            height: 50px;
+            width: 1250px;
+            margin-bottom: 20px;
+        }
+      
+        
+    </style>
+    <script type="text/javascript">
+
+        function alertfun() {
+
+            alert('hello dasmeet');
+        }
+
+        function confirmfun() {
+
+            if (confirm("are you sure..??")) {
+                alert("yesssss");
+            }
+            else {
+                alert("nooooo");
+            }
+        }
+        function promptfun() {
+            var firstname = prompt("enter first name here..");
+            var middlename = prompt("enter middle name here..");
+            var lastname = prompt("enter last name..");
+            alert(firstname + " " + middlename + " " + lastname);
+        }
+        function bodyBGchangeTOYELLOW() {
+            document.body.style.backgroundcolor = "yellow";
+        }
+        function bodyBGchangeTOprompt() {
+            document.body.style.backgroundcolor = prompt("enter background color here..");
+        }
+        function colorPickerBodyBG() {
+            document.body.style.backgroundColor = document.getElementById("CP").value;
+        }
+        function pinkBGDiv() {
+            document.getElementsByTagName("div")[0].style.backgroundColor = "pink";
+        }
+        function divBGChangeToText() {
+            document.getElementsByClassName('cld')[0].style.backgroundColor = prompt("ENTER BACKGROUND COLOR");
+        }
+        function bodyBGchangeTOYELLOW() {
+            document.body.style.backgroundcolor = "yellow";
+        }
+        function colorPickerDivBG() {
+            document.getElementById("D1").style.backgroundColor = document.getElementById("CP1").value;
+        }
+        function bodyBGchangeTOprompt() {
+            document.body.style.backgroundColor = prompt("enter background color here..");
+        }
+    </script>
+</HEAD>
+
+<body>
+    <div id="D1" class="cld">
+        My First javascript program!!!!!
+    </div><hr>
+    <input type="button" value="alert inline" onclick="alert('okayy')"> &nbsp;  &nbsp;  &nbsp;
+    <input type="button" value="prompt inline" onclick="prompt('enter first name here..')"> &nbsp;  &nbsp;  &nbsp;
+    <input type="button" value="prompt internal" onclick="promptfun()"> &nbsp;  &nbsp;  &nbsp;
+    <input type="button" value="prompt external" onclick="prompt()"><hr>
+    <input type="button" value="yellow body background" onclick="pinkBG()"> &nbsp;  &nbsp;  &nbsp;
+    <input type="button" value="text body colour to background" onclick="bodyBGchangeTOprompt()">  &nbsp;  &nbsp; &nbsp;
+    <input type="color" id="CP" onchange="colorPickerBodyBG()" />  &nbsp;  &nbsp;  &nbsp;
+    <hr>
+    <input type="button" value="confirm inline" onclick="confirm('are you sure..??')"> &nbsp; &nbsp;  &nbsp;
+    <input type="button" value="confirm internal" onclick="confirm()"> &nbsp;  &nbsp;  &nbsp;
+    <input type="button" value="pink div background" onclick="pinkBGDiv()"> &nbsp;  &nbsp;  &nbsp;
+    <hr>
+
+    <input type="button" value="prompt internal" onclick="divBGChangeToText()" />  &nbsp;  &nbsp;  &nbsp; 
+    <input type="color"  value="prompt external" onchange="colorPickerDivBG()">
+    <hr>
+
+</body>
+
+</html>
